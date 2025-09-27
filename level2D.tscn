@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ScoreUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/City.tscn" type="PackedScene" id=3]
+[ext_resource path="res://BIG ALIENS.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="City" parent="." instance=ExtResource( 3 )]
+position = Vector2( 247, 170 )
+scale = Vector2( 1.93407, 1.49297 )
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( -58, 161 )
+
+[node name="robot" parent="." instance=ExtResource( 4 )]
+position = Vector2( -16, 14 )
+scale = Vector2( 2.12, 3.46154 )
+
+[node name="Control" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -68.0
+margin_top = 9.0
+margin_right = -68.0
+margin_bottom = 9.0
+rect_scale = Vector2( 2.12, 3.46154 )
